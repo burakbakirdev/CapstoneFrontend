@@ -1,0 +1,130 @@
+/* Google Font Import - Open Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: rgb(80, 146, 190);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
+    border-radius: 8px;
+}
+
+.container .form{
+    padding: 30px;
+}
+
+.container .form .title{
+    font-size: 2rem;
+    position: relative;
+    font-weight: 600 ;
+}
+
+.form .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: rgb(255, 7, 214);
+    border-radius: 30px;
+}
+
+.form .input-field{
+    position: relative;
+    height: 3rem;
+    width: 100%;
+    margin-top: 2rem ;
+}
+
+.input-field input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 2rem;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+.input-field input:hover{
+    border-color: rgb(255, 7, 214);
+}
+
+.input-field input:is(:focus, :valid){
+    border-color: rgb(0, 0, 0);
+}
+
+
+.input-field i{
+    color: #999;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.3rem;
+    transition: all 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid) ~ i{
+    color: rgb(0, 0, 0);
+}
+
+.input-field i.icon{
+    left: 0.5rem;
+}
+
+.input-field i.showHidePW{
+    right: 0.5rem;
+}
+
+.input-field i.showHidePW:hover{
+  cursor: pointer;
+}
+
+.form .button input{
+  border-color: white;
+  background-color:  rgb(85, 81, 251);
+  /* opacity: 0.75; */
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  transition: all 0.3 ease;
+}
+
+.form .button input:hover{
+  color: rgb(255, 7, 214);
+  background-color: white;
+  border-color: rgb(255, 7, 214);
+  cursor: pointer;
+}
+
+.form .login-register{
+  margin-top: 2rem;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.form .login-register .register-text{
+  margin-left: 3px;
+  font-weight: 600;
+  color: rgb(69, 87, 255);
+}

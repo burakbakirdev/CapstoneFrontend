@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@600&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+/* Text */
+
+.text-center {
+    text-align: center;
+}
+
+.heading-small {
+    font-size: 1.25rem;
+}
+
+.heading-medium {
+    font-size: 1.5rem;
+}
+
+.heading-big {
+    font-size: 1.75rem;
+}
+
+.montagu-font{
+    font-family: 'Montagu Slab', serif;
+}
+
+
+/* Colors */
+
+.gh-dark-blue{
+    background: rgb(13 , 17, 23);
+}
+

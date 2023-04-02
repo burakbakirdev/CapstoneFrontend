@@ -1,0 +1,111 @@
+
+
+#nav{
+color: rgb(139, 139, 124);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.75rem;
+    height: 85px;
+    margin: 0 10% ;
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+    background-color: rgb(13, 17, 23);
+}
+
+
+#nav a{
+    text-decoration: none;
+    color: rgb(139, 139, 124);
+}
+
+#nav span{
+    color: red;
+}
+
+#nav ul.standartbtn{
+    margin-top: 15px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* #nav ul li{
+    margin: 50px 0px !important;
+} */
+
+#nav ul li a {
+    padding: 0.75rem;
+    font-weight: 500;
+    margin: 1rem ;
+}
+
+#nav ul li a:hover ,#usernamebtn:hover {
+    margin: 0.88rem;
+    border: 2px solid rgb(139, 139, 124);
+    border-radius: 12px;
+}
+
+#nav .uil{
+    font-size: 1.3rem;
+    margin: 0 0.4rem;
+}
+
+#nav ul li a.createREBA {
+    color: rgb(172, 172, 145);
+    background-color: rgb(131, 5, 5);
+    border-radius: 12px;
+}
+
+#nav ul li a.createREBA:hover{
+    border: 2px solid rgb(131, 5, 5);
+    background: rgb(0, 0, 0);
+    color: rgb(139, 139, 124);
+    margin: 0.88rem;
+    transition: all 0.2 ease;
+}
+
+header::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 82px;
+    height: 3px;
+    width: 100%;
+    background-color: rgb(139, 139, 124);
+}
+
+#usernamebtn{
+    color:rgb(139, 139, 124);
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    padding: 0.75rem;
+    font-weight: 500;
+    margin: 1rem ;
+    font-size: 1.3rem;
+}
+
+
+
+#dpdw{
+    background-color: rgb(139, 139, 124);
+    margin: 0;
+    padding:0;
+}
+
+#dpdw .dropdown-item{
+    color: rgb(13, 17, 23);
+    margin-left: 0px !important;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 0.5rem;
+}
+
+#dpdw .dropdown-item:hover{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+body{
+    background-color: rgb(28, 8, 20);
+}

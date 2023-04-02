@@ -1,0 +1,17 @@
+.head-title{
+    color: rgb(139, 139, 124);
+    /* margin-right: 10%; */
+    /* margin-left: 10%;
+    margin-right: 10%; */
+}
+
+.head-title h1{
+    font-size: 8rem;
+    font-family: 'Montagu Slab', serif;
+}
+
+.head-title h1 span{
+    font-size: 8rem;
+    font-family: 'Montagu Slab', serif;
+    color: rgb(223, 0, 0);
+}

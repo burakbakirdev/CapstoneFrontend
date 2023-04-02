@@ -1,33 +1,55 @@
 /* Google Font Import - Open Sans*/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@600&family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
 
-*{
-    margin:  0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+.head-title{
+    color: rgb(139, 139, 124);
+    /* margin-right: 10%; */
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.head-title h1{
+    font-size: 10rem;
+    font-family: 'Montagu Slab', serif;
+}
+.head-title h1 span{
+    font-size: 10rem;
+    font-family: 'Montagu Slab', serif;
+    color: rgb(223, 0, 0);
+}
+
+.head-title p{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    /* padding-right: 25%; */
+    text-align: center;
+    padding-left: 2rem;
 }
 
 body{
-    background-color: rgb(80, 146, 190);
+    background-color: rgb(13, 17, 23);
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .container{
     position: relative;
     max-width: 430px;
+    min-width: 340px;
     width: 100%;
-    background: rgb(255, 255, 255);
+    background: rgb(211, 211, 200);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
     border-radius: 8px;
+    margin-right: 10%;
 }
 
 .container .form{
     padding: 30px;
+
 }
 
 .container .form .title{
@@ -43,7 +65,7 @@ body{
     bottom: 0;
     height: 3px;
     width: 30px;
-    background-color: rgb(255, 7, 214);
+    background-color: rgb(223, 0, 0);
     border-radius: 30px;
 }
 
@@ -56,7 +78,7 @@ body{
 
 .input-field input{
     position: absolute;
-    height: 100%;
+    height: 100%; 
     width: 100%;
     padding: 0 2rem;
     border: 1px solid #999;
@@ -66,7 +88,7 @@ body{
 }
 
 .input-field input:hover{
-    border-color: rgb(255, 7, 214);
+    border-color: rgb(207, 39, 39);
 }
 
 .input-field input:is(:focus, :valid){
@@ -93,27 +115,24 @@ body{
 
 .input-field i.showHidePW{
     right: 0.5rem;
+    cursor: pointer;
 }
 
-.input-field i.showHidePW:hover{
-  cursor: pointer;
-}
 
 .form .button input{
-  border-color: white;
-  background-color:  rgb(85, 81, 251);
-  /* opacity: 0.75; */
+  border-color: rgb(211, 211, 200);
+  background-color:  rgb(207, 39, 39);
   color: white;
-  font-weight: 500;
+  font-weight:600;
   font-size: 1rem;
   letter-spacing: 1px;
   transition: all 0.3 ease;
 }
 
 .form .button input:hover{
-  color: rgb(255, 7, 214);
+  color: rgb(207, 39, 39);
   background-color: white;
-  border-color: rgb(255, 7, 214);
+  border-color: rgb(207, 39, 39);
   cursor: pointer;
 }
 
@@ -124,7 +143,7 @@ body{
 }
 
 .form .login-register .register-text{
-  margin-left: 3px;
   font-weight: 600;
-  color: rgb(69, 87, 255);
+  color: #1877f2;
+  letter-spacing: 1px;
 }

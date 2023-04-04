@@ -1,7 +1,7 @@
 
 
 #nav{
-color: rgb(139, 139, 124);
+    color: rgb(139, 139, 124);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,7 +19,7 @@ color: rgb(139, 139, 124);
     color: rgb(139, 139, 124);
 }
 
-#nav span{
+#nav span.logo{
     color: red;
 }
 
@@ -104,8 +104,48 @@ header::before{
 
 #dpdw .dropdown-item:hover{
     background-color: rgba(0, 0, 0, 0);
+    margin: 0.5rem;
+    border: none;
 }
 
 body{
     background-color: rgb(28, 8, 20);
+}
+
+@media only screen and (max-width: 768px) {
+    .text {
+        display:none;
+    }
+    .standartbtn {
+        margin: 0 !important;
+    }
+
+    #nav ul li a {
+        margin :0;
+        padding: 5px;
+    }
+    #usernamebtn {
+        margin:0;
+        padding:0;
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+    .standartbtn{
+        font-size: 15px;
+    }
+    .standartbtn i {
+        font-size: 15px !important;
+    }
+    #dpdw a{
+        font-size: 15px !important;
+    }
+    #usernamebtn:hover {
+        border:none !important;
+        margin: 0;
+    }
+    #nav {
+        margin:0 !important;
+    }
 }

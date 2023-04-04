@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/createreba.css">
+ 
+</head>
+<body>
+
+    <header>
+        <div class="navbardiv">
+            <nav class="navbar bg-body-tertiary ">
+                <div class="container-fluid">
+                  <a class="navbar-brand montagu-font" onclick="window.location='homepage.html'" href="#"><span class="brand-logo" >||</span>REBASE</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" id="toggler"></span>
+                    </button>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><span class="brand-logo">||</span>REBASE</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a class="nav-link " aria-current="page" onclick="window.location='homepage.html'" href="#">Homepage</a>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">username</a>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Reports</a>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Log out</a>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                      </form> -->
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </header>
+
+    <div >
+        <div class="container-fluid main-reba">
+            <div class="row">
+              <div class="col video-col">
+                <video src="" controls></video>
+              </div>
+
+                <!-- Left Column -->
+
+              <div class="col-3 reba-col">
+                <h4>A. Neck,Trunk and Leg Analysis</h4>
+                
+                <div class="row">
+                    <div class="row">
+                        <h5>Step 1: Locate Neck Position</h5>
+                        <img src="/images/Neck.png" alt="Neck Position Photo">
+                    </div>
+                    <div class="col">
+                        <p>Step 1a: Adjust... <br>
+                            If neck is twisted: +1 <br>
+                            If neck is side bending: +1
+                        </p>
+                    </div>
+                    <div class="col">
+                        <form action="">
+                            <select name="score" id="neckscore">
+                                <option value="+1">Neck Score: +1</option>
+                                <option value="+2">Neck Score: +2</option>
+                                <option value="+3">Neck Score: +3</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="row ">
+                        <h5>Step 2: Locate Trunk Position</h5>
+                        <img class="trunk-image" src="/images/Trunk.png" alt="Trunk Position Photo">
+                    </div>
+                    <div class="col">
+                        <p>Step 2a: Adjust... <br>
+                            If trunk is twisted: +1 <br>
+                            If trunk is side bending: +1
+                        </p>
+                    </div>
+                    <div class="col">
+                        <form action="">
+                            <select name="score" id="trunkscore">
+                                <option value="+1" selected>Trunk Score: +1</option>
+                                <option value="+2">Trunk Score: +2</option>
+                                <option value="+3">Trunk Score: +3</option>
+                                <option value="+4">Trunk Score: +4</option>
+                                <option value="+5">Trunk Score: +5</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="row">
+                        <div class="col">
+                            <h5>Step 3: Legs</h5>
+                        </div>
+                        <div class="col">
+                            <form action="">
+                                <select  name="score" id="legscore">
+                                    <option value="+1">Leg Score: +1</option>
+                                    <option value="+2">Leg Score: +2</option>
+                                    <option value="+3">Leg Score: +3</option>
+                                    <option value="+4">Leg Score: +4</option>
+                                </select>
+                            </form>
+                        </div>
+                        <img src="/images/leg.png" alt="Leg Position Photo">
+                    </div>
+
+                    <div class="row">
+                        <h5>Step 4: Add Force/Load Score</h5>
+                    </div>
+                    <div class="row">
+                        <div class="row">
+                            <div class="col">
+                                -If load < 11 lbs: +0 <br>
+                                -If load 11 to 22 lbs: +1 <br>
+                                -If load > 22 lbs: +2 <br>
+                            </div>
+                            <div class="col">
+                                <div class="force-div">
+                                    <form class="force-form" action="">
+                                        <select class="force-select" name="score" id="forceloadscore">
+                                            <option value="+1">Force/Load Score: +0</option>
+                                            <option value="+2">Force/Load Score: +1</option>
+                                            <option value="+3">Force/Load Score: +2</option>
+                                            <option value="+3">Force/Load Score: +3</option>
+                                        </select>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                          -Adjust: If shock or rapid build up of force: add +1
+                    </div>
+                </div>
+                
+                <!-- Right Column -->
+
+              </div>
+              <div class="col-3 reba-col">
+                <h4>B. Arm and Wrist Analysis</h4>
+                <div class="row">
+                    <div class="row">
+                        <h5>Step 5: Locate Upper Arm Position</h5>
+                        <img src="/images/UpperArm.png" alt="Upper Arm Position Photo">
+                    </div>
+                    <div class="col">
+                        <p>Step 5a: Adjust... <br>
+                            -If shoulder is raised: +1 <br>
+                            -If upper arm is abducted:+1 <br>
+                            -If arm is supported or person is learning: -1
+                        </p>
+                    </div>
+                    <div class="col">
+                        <form action="">
+                            <select name="score" id="upperarmscore">
+                                <option value="+1">Upper Arm Score: +1</option>
+                                <option value="+2">Upper Arm Score: +2</option>
+                                <option value="+3">Upper Arm Score: +3</option>
+                                <option value="+4">Upper Arm Score: +4</option>
+                                <option value="+5">Upper Arm Score: +5</option>
+                                <option value="+6">Upper Arm Score: +6</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="row">
+                        <h5>Step 6: Locate Lower Arm Position</h5>
+                        <img class="lower-arm-image" src="/images/LowerArm-1.png" alt="Lower Arm Position Photo">
+                    </div>
+                    <div class="col">
+                        <form action="">
+                            <select name="score" id="lowerarmscore">
+                                <option value="+1">Lower Arm Score: +1</option>
+                                <option value="+2">Lower Arm Score: +2</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="row">
+                        <h5>Step 1: Locate Neck Position</h5>
+                        <img src="/images/Neck.png" alt="Neck Position Photo">
+                    </div>
+                    <div class="col">
+                        <p>Step 1a: Adjust... <br>
+                            If neck is twisted: +1 <br>
+                            If neck is side bending: +1
+                        </p>
+                    </div>
+                    <div class="col">
+                        <form action="">
+                            <select name="score" id="neckscore">
+                                <option value="+1">+1</option>
+                                <option value="+2">+2</option>
+                                <option value="+3">+3</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+</body>
+</html>

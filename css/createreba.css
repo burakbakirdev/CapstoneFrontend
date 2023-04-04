@@ -1,0 +1,112 @@
+
+
+nav.navbar{
+    background-color:rgb(13, 17, 23) !important;
+}
+
+.brand-logo{
+    color: red;
+}
+
+.navbar-brand , .offcanvas-title{
+    color: rgb(139, 139, 124);
+   
+}
+
+.navbar-brand:hover{
+    color: rgb(139, 139, 124) !important;
+}
+
+.navbar-brand:focus{
+    color: rgb(139, 139, 124) !important;
+}
+
+.navbar .container-fluid{
+    margin: 0 3%;
+}
+
+/* Toggle Icon */
+
+.navbar-toggler-icon{
+    opacity: 1 !important;
+    background-color: rgb(139, 139, 124);
+}
+
+.navbar-toggler{
+    color: rgb(139, 139, 124) !important;
+    opacity: 1 !important;
+    background-color: rgb(139, 139, 124);
+    border-radius: 12px;
+    border-color: rgb(13, 17, 23);
+}
+
+#toggler{
+    color: red !important;
+}
+
+/* Toggle Menu */
+
+.offcanvas-header{
+    background-color: rgb(13, 17, 23);
+}
+
+.offcanvas-body{
+    background-color: rgb(28, 8, 20);
+}
+
+.nav-link{
+    color: rgb(139, 139, 124);
+    margin: 1rem;
+}
+
+.nav-link:hover{
+    color: rgb(139, 139, 124);
+}
+
+.nav-link:focus{
+    color: rgb(139, 139, 124);
+}
+
+.dropdown-divider{
+    color: rgb(139, 139, 124) !important;
+    height: 5px !important;
+    opacity: 1;
+}
+
+/* Section Main */
+
+.video-col{
+    height: 800px;
+}
+
+video{
+    width: 100%;
+}
+
+img{
+    width: 100%;
+}
+
+.leg-photo{
+    width: 100%;
+}
+
+.force-form{
+    height: 100%;
+    width: 100%;
+}
+
+.force-div{
+    height: 100%;
+    width: 100%;
+}
+
+.force-form{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.lower-arm-image{
+
+}

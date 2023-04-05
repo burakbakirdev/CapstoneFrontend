@@ -1,4 +1,36 @@
+h4,h5, p ,.step7adjust{
+    color: rgb(13, 17, 23);
+    font-weight: 500;
+}
 
+p{
+    padding: 0 !important;
+    padding-left: 12px !important;
+    margin: 0 !important;
+}
+
+.col{
+    padding: 0 !important;
+}
+
+h4{
+    text-align: center;
+    margin-bottom: 0 !important;
+    font-weight: 700;
+    color: black;
+}
+
+h5{
+    margin: 2px !important;
+    color: rgb(13, 17, 23);
+    font-weight: 700;
+}
+
+body{
+    background-color: rgb(37, 45, 56);
+}
+
+/* Navbar */
 
 nav.navbar{
     background-color:rgb(13, 17, 23) !important;
@@ -29,19 +61,21 @@ nav.navbar{
 
 .navbar-toggler-icon{
     opacity: 1 !important;
-    background-color: rgb(139, 139, 124);
 }
 
 .navbar-toggler{
     color: rgb(139, 139, 124) !important;
     opacity: 1 !important;
-    background-color: rgb(139, 139, 124);
     border-radius: 12px;
     border-color: rgb(13, 17, 23);
 }
 
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
 #toggler{
-    color: red !important;
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba%28139, 139, 124, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
 }
 
 /* Toggle Menu */
@@ -75,38 +109,202 @@ nav.navbar{
 
 /* Section Main */
 
+select{
+    border: 0.1rem solid black;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: rgb(192, 192, 192);
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+.main-content{
+    margin-top: 10px;
+}
+
+/* Video Column */
+
+.reba-score-row{
+    margin: 0;
+    margin-top: 10px;
+    background-color: rgb(192, 192, 192);
+    width: 100%;    
+    border: 2px solid rgb(23, 13, 13);
+    padding: 10px;
+
+}
+
+h2{
+    display: flex;
+}
+
+#final-reba{
+    width: 100%;
+    border-bottom: 3px solid black;
+}
+
+/* Submit Col */
+
+.submit-col{
+
+}
+
+.submit-text{
+    font-weight: 600;
+    
+}
+/* 
+.submit-score-btn-col{
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+} */
+
+.submit-row,.save-row{
+    width: 50%;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    padding-top:5px;
+    padding-left: 30px;
+}
+
+#button-addon1{
+    border: 2px solid rgb(13, 17, 23);
+    background-color: rgb(139, 139, 124);
+    color: black;
+    font-weight: 600;
+    border-right: none;
+}
+
+span#score-output{
+    background-color: rgb(192, 192, 192);
+    border: 2px solid rgb(13, 17, 23);
+    width: 50% !important;
+    color: rgb(13, 17, 23);
+    font-weight: 500;
+}
+
+/* Save Col */
+
+
+
+#primary-save-btn{
+    width: auto;
+}
+
+.input-group{
+    margin: 5px 0px !important;
+}
+
+#dummy{
+    opacity: 0;
+}
+
+
+
 .video-col{
-    height: 800px;
+    height: 100%;
+    padding: 0 2px !important;
+    margin: 0 0.75rem !important;
+}
+
+/* REBA Columns */
+
+.reba-col{
+    height: 100%;
+    padding: 0 1px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+
+.first-row{
+    margin: 1px 0;
+    border: 2px solid rgb(23, 13, 13);
+    border-radius: 8px;
 }
 
 video{
     width: 100%;
+    margin-top: 8px;
 }
 
 img{
     width: 100%;
+    padding: 0 !important;
 }
 
-.leg-photo{
+.neck-form{
+    height: 100%;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trunk-form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leg-form{
+    margin: 5px;
+    float: right;
 }
 
 .force-form{
     height: 100%;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.force-div{
+.upperarm-form{
     height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lower-arm-card{
+    top: 0;
+    width: 100% !important;
+    position: relative !important;
+    border: 0px solid;
+    border-radius: 12px;
+}
+
+.lowerarm-form{
+    bottom: 0;
+    right: 0;
+    margin: 5px;
+    display: flex;
+    position: absolute !important;
+}
+
+.wrist-image{
     width: 100%;
 }
 
-.force-form{
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
+.wrist-form{
+    margin: 5px;
+    margin-right: 30px;
+    float: right;
 }
 
-.lower-arm-image{
+.coupling-form{
+    margin: 2px;
+}
 
+h5.coupling{
+    padding-left: 5px;
+}
+
+.coupling-col{
+    padding: 0;
 }

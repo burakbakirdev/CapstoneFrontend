@@ -109,11 +109,12 @@ nav.navbar{
 
 /* Section Main */
 
+
 select{
-    border: 0.1rem solid black;
+    
     border-radius: 12px;
     cursor: pointer;
-    background-color: rgb(192, 192, 192);
+    background-color: rgb(199, 143, 216);
     color: rgb(0, 0, 0);
     font-weight: 600;
 }
@@ -140,57 +141,97 @@ h2{
 
 #final-reba{
     width: 100%;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid rgb(64, 64, 249);
 }
 
 /* Submit Col */
 
-.submit-col{
-
+.submit-row{
+    margin: 10px;
+    margin-top: 20px;
 }
 
 .submit-text{
     font-weight: 600;
-    
+    font-size: 1.3rem;
 }
-/* 
-.submit-score-btn-col{
-    display: flex;
-    justify-content: center !important;
-    align-items: center !important;
-} */
 
-.submit-row,.save-row{
-    width: 50%;
-    display: flex;
-    justify-content: center !important;
-    align-items: center !important;
-    padding-top:5px;
+#submit-input-group{
+    width: 23%;
+    padding: 10px;
     padding-left: 30px;
 }
 
 #button-addon1{
     border: 2px solid rgb(13, 17, 23);
-    background-color: rgb(139, 139, 124);
+    background-color: rgb(199, 143, 216);
     color: black;
-    font-weight: 600;
+    font-weight: 700;
     border-right: none;
+    width: auto;
+}
+
+#button-addon1:hover{
+    background-color: rgb(195, 122, 217);
 }
 
 span#score-output{
     background-color: rgb(192, 192, 192);
     border: 2px solid rgb(13, 17, 23);
-    width: 50% !important;
+    width: auto !important;
     color: rgb(13, 17, 23);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+
+/* Score Table */
+
+thead tr th{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+th{
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+td{
+    font-size: 1.2rem;
     font-weight: 500;
 }
 
+.table-row{
+    width: 80% ;
+    margin: 10px;
+}
+
+table{
+    background-color: white;
+}
+
+
+
 /* Save Col */
+
+.save-col{
+    margin: 10px;
+    padding-left: 23px !important;
+}
+
+.save-row{
+    margin: 10px;
+    margin-top: 20px;
+    padding-left: 11px;
+}
 
 
 
 #primary-save-btn{
     width: auto;
+    border: 2px solid rgb(13, 17, 23);
 }
 
 .input-group{
@@ -200,8 +241,6 @@ span#score-output{
 #dummy{
     opacity: 0;
 }
-
-
 
 .video-col{
     height: 100%;
@@ -298,8 +337,9 @@ img{
 }
 
 .coupling-form{
-    margin: 2px;
+    margin: 3px;
 }
+
 
 h5.coupling{
     padding-left: 5px;

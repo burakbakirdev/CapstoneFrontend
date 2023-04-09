@@ -3,6 +3,12 @@ h4,h5, p ,.step7adjust{
     font-weight: 500;
 }
 
+hr{
+    margin: 0;
+    padding: 0;
+    border: 1.5px solid rgb(247, 105, 255);
+}
+
 p{
     padding: 0 !important;
     padding-left: 12px !important;
@@ -101,29 +107,35 @@ nav.navbar{
     color: rgb(139, 139, 124);
 }
 
-.dropdown-divider{
-    color: rgb(139, 139, 124) !important;
-    height: 5px !important;
-    opacity: 1;
-}
 
 /* Section Main */
 
 
 select{
-    
     border-radius: 12px;
     cursor: pointer;
-    background-color: rgb(199, 143, 216);
+    background-color: rgb(141, 223, 255);
     color: rgb(0, 0, 0);
     font-weight: 600;
 }
+
+/* select:hover{
+    background-color: rgb(71, 160, 173);
+} */
 
 .main-content{
     margin-top: 10px;
 }
 
 /* Video Column */
+
+.upload-video-btn{
+    position: absolute;
+    display: flex;
+    width: auto;
+    top: 43%;
+    left: 43.7%;
+}
 
 .reba-score-row{
     margin: 0;
@@ -158,6 +170,7 @@ h2{
 
 #submit-input-group{
     width: 23%;
+    min-width: 200px;
     padding: 10px;
     padding-left: 30px;
 }

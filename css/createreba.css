@@ -117,6 +117,7 @@ select{
     background-color: rgb(141, 223, 255);
     color: rgb(0, 0, 0);
     font-weight: 600;
+    width: auto;
 }
 
 /* select:hover{

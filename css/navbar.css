@@ -1,0 +1,79 @@
+/* Navbar */
+
+nav.navbar {
+  background-color: rgb(13, 17, 23) !important;
+}
+
+.brand-logo {
+  color: red;
+}
+
+.navbar-brand,
+.offcanvas-title {
+  color: rgb(139, 139, 124);
+}
+
+.navbar-brand:hover {
+  color: rgb(139, 139, 124) !important;
+}
+
+.navbar-brand:focus {
+  color: rgb(139, 139, 124) !important;
+}
+
+.navbar .container-fluid {
+  margin: 0 3%;
+}
+
+/* Toggle Icon */
+
+.navbar-toggler-icon {
+  opacity: 1 !important;
+}
+
+.navbar-toggler {
+  color: rgb(139, 139, 124) !important;
+  opacity: 1 !important;
+  border-radius: 12px;
+  border-color: rgb(13, 17, 23);
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+#toggler {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba%28139, 139, 124, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+
+/* Toggle Menu */
+
+.offcanvas-header {
+  background-color: rgb(13, 17, 23);
+}
+
+.offcanvas-body {
+  background-color: rgb(28, 8, 20);
+}
+
+.nav-link {
+  color: rgb(139, 139, 124);
+  margin: 1rem;
+}
+
+.nav-link:hover {
+  color: rgb(139, 139, 124);
+}
+
+.nav-link:focus {
+  color: rgb(139, 139, 124);
+}
+
+hr {
+  margin: 0;
+  padding: 0;
+  border: 1.5px solid rgb(247, 105, 255);
+}
+
+/* Navbar END */
+

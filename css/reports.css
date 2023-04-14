@@ -1,0 +1,59 @@
+/* Reports Section */
+
+body {
+  background-color: rgb(28, 8, 20);
+}
+
+.accordion-item {
+  border: none !important;
+}
+
+.accordion-button {
+  background-color: rgb(218, 221, 226);
+  font-weight: 600;
+  border: none !important;
+  box-shadow: none;
+  --bs-accordion-active-bg: rgb(181, 183, 186) !important;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+#header-row h1 {
+  color: antiquewhite;
+  font-size: 4rem;
+}
+
+#header-row p {
+  color: white;
+  width: 100%;
+}
+
+#header-row hr {
+  width: 100%;
+  margin-left: 12px;
+}
+
+.table-col{
+  padding-top: 5px !important;
+}
+
+#reports table {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.2rem;
+  font-weight: 500;
+  height: 100%;
+}
+
+/* Table Border Customization */
+
+.custom-border {
+  border-left: 2px solid black !important;
+  border-right: 2px solid black !important;
+}
+
+/* Table Border Customization END*/
+
+/* Reports Section END*/

@@ -9,12 +9,24 @@ body {
 }
 
 .accordion-button {
-  background-color: rgb(218, 221, 226);
-  font-weight: 600;
+  background-color: rgb(190, 190, 190);
+  font-weight: 700;
   border: none !important;
   box-shadow: none;
   --bs-accordion-active-bg: rgb(181, 183, 186) !important;
 }
+
+/* #button-row{
+  position: relative;
+  text-align: center;
+} */
+
+/* .btn-primary {
+  position: absolute;
+  width: auto;
+  top: 13%;
+  right: 5%
+} */
 
 .accordion-button:focus {
   box-shadow: none;
@@ -35,7 +47,7 @@ body {
   margin-left: 12px;
 }
 
-.table-col{
+.table-col {
   padding-top: 5px !important;
 }
 
@@ -47,6 +59,16 @@ body {
   height: 100%;
 }
 
+.download-btn{
+  background-color: rgba(0, 255, 128, 0.432);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.download-btn:hover{
+  background-color: rgba(0, 255, 128, 0.576);
+}
+
 /* Table Border Customization */
 
 .custom-border {
@@ -55,5 +77,18 @@ body {
 }
 
 /* Table Border Customization END*/
+
+@media screen and (max-width: 470px){
+  .container{
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .accordion{
+    padding: 0 !important;
+  }
+}
+
 
 /* Reports Section END*/

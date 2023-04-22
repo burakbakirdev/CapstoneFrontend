@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DENEME</title>
+
+  <!-- Bootstrap Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+
+  <!-- Links -->
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/denemereba.css">
+
+</head>
+
+<body>
+
+  <!-- Full Content -->
+  <div class="all-content">
+    <!-- Navbar -->
+    <header>
+      <div class="navbardiv">
+        <nav class="navbar bg-body-tertiary ">
+          <div class="container-fluid">
+            <a class="navbar-brand montagu-font" href="homepage.html"><span class="brand-logo">||</span>REBASE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon" id="toggler"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><span class="brand-logo">||</span>REBASE</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="homepage.html">Homepage</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="profile.html">username</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="reports.html">Reports</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="login-register.html">Log out</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Navbar END-->
+
+    <!-- Main Section -->
+    <section class="main-content">
+      <div class="container-fluid main-reba">
+        <div class="row">
+
+          <!-- Video COL -->
+          <div class="col-xl" id="video-col">
+            <div class="col m-2">
+              <div class="row" style="position: relative; text-align: center; ">
+                <video src="" controls></video>
+                <button type="button" class="btn btn-light upload-video-btn">Upload Video</button>
+              </div>
+            </div>
+
+          </div>
+          <!-- Video COL END-->
+
+          <!-- Reba Col -->
+          <div class="col-xl-6" id="reba-col">
+
+            <!-- First Row -->
+            <div class="row m-0">
+              <!-- Left Col -->
+              <div class="col-md-6 p-1 pb-4" id="reba-left-col">
+                <h4 class="mb-0 p-0 text-center">A. Neck,Trunk and Leg Analysis</h4>
+                <div class="row p-0 m-0" style="height: 100%;">
+                  <div class="card my-1 p-0" style="width: 100%;">
+                    <h5 class="card-title p-1 ps-3">Step 1: Locate Neck Position</h5>
+                    <hr>
+                    <img style="height: 130px;" src="/images/Neck.png" class="card-img-top pt-1" alt="neck-image">
+                    <div class="card-body">
+                      <div class="col h-50">
+                        <p class="card-text ps-4">Step 1a: Adjust... <br>
+                          -If neck is twisted: +1 <br>
+                          -If neck is side bending: +1</p>
+                      </div>
+                      <div class="w-100 d-none d-md-block"></div>
+                      <div class="col h-50">
+                        <form class="neck-form pt-3" action="">
+                          <select name="score" id="neckscore" required>
+                            <option value="1">Neck Score: 1</option>
+                            <option value="2">Neck Score: 2</option>
+                            <option value="3">Neck Score: 3</option>
+                          </select>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card mb-1 p-0" style="width: 100%;">
+                    <h5 class="card-title p-1 ps-3">Step 2: Locate Trunk Position</h5>
+                    <hr>
+                    <img style="height: 130px;" src="/images/Trunk.png" class="card-img-top" alt="neck-image">
+                    <div class="card-body">
+                      <div class="col h-50"">
+												<p class=" card-text">Step 2a: Adjust... <br>
+                        -If trunk is twisted: +1 <br>
+                        -If trunk is side bending: +1
+                        </p>
+                      </div>
+                      <div class="w-100 d-none d-md-block"></div>
+                      <div class="col h-50">
+                        <form class="trunk-form pt-3" action="">
+                          <select name="score" id="trunkscore" required>
+                            <option value="1">Trunk Score: 1</option>
+                            <option value="2">Trunk Score: 2</option>
+                            <option value="3">Trunk Score: 3</option>
+                            <option value="4">Trunk Score: 4</option>
+                            <option value="5">Trunk Score: 5</option>
+                          </select>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card mb-1 p-0" style="width: 100%;">
+                    <h5 class="card-title p-1 ps-3">Step 3: Legs</h5>
+                    <hr>
+                    <img style="height: 180px;" src="/images/leg.png" class="card-img-top pt-1" alt="neck-image">
+                    <div class="card-body">
+                      <form class="leg-form" action="">
+                        <select name="score" id="legscore" required>
+                          <option value="1">Leg Score: 1</option>
+                          <option value="2">Leg Score: 2</option>
+                          <option value="3">Leg Score: 3</option>
+                          <option value="4">Leg Score: 4</option>
+                        </select>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="card mb-1 p-0" style="width: 100%;">
+                    <h5 class="card-title p-1 ps-3">Step 4(A): Add Force/Load Score</h5>
+                    <hr>
+                    <div class="card-body">
+                      <div class="row">
+                        <p class="card-text">
+                          -If load < 11 lbs: +0 <br>-If load 11 to 22 lbs: +1 <br>-If load > 22 lbs: +2<br>-Adjust: If
+                            shock or rapid build up of force: add +1
+                        </p>
+                        <form class="force-form text-center pt-4" action="">
+                          <select class="force-select" name="score" id="forceloadscore" required>
+                            <option value="0">Force/Load Score: 0</option>
+                            <option value="1">Force/Load Score: 1</option>
+                            <option value="2">Force/Load Score: 2</option>
+                            <option value="3">Force/Load Score: 3</option>
+                          </select>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Left Col END -->
+              <!-- Right Col -->
+              <div class="col-md-6 p-1 pb-4" id="reba-right-col">
+                <h4 class="mb-0 p-0 text-center">B. Arm and Wrist Analysis</h4>
+                <div class="row p-0 m-0" style="height: 100%;">
+                  <div class="card my-1 p-0" style="width: 100%;">
+                    <h5 class="card-title p-1 ps-3">Step 5: Locate Upper Arm Position</h5>
+                    <hr>
+                    <img style="height: 120px;" src="/images/UpperArm.png" class="card-img-top" alt="neck-image">
+                    <div class="card-body">
+                      <div class="col">
+                        <p class="card-text">Step 5a: Adjust... <br>
+                          -If shoulder is raised: +1 <br>
+                          -If upper arm is abducted:+1 <br>
+                          -If arm is supported or person is leaning: -1
+                        </p>
+                      </div>
+                      <div class="w-100 d-none d-md-block"></div>
+                      <div class="col">
+                        <form class="upperarm-form pt-3" action="">
+                          <select name="score" id="upperarmscore" required>
+                            <option value="1">Upper Arm Score: 1</option>
+                            <option value="2">Upper Arm Score: 2</option>
+                            <option value="3">Upper Arm Score: 3</option>
+                            <option value="4">Upper Arm Score: 4</option>
+                            <option value="5">Upper Arm Score: 5</option>
+                            <option value="6">Upper Arm Score: 6</option>
+                          </select>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card mb-1 p-0" style="width: 100%;">
+                    <h5 class="card-title p-1 ps-3">Step 6: Locate Lower Arm Position</h5>
+                    <hr>
+                    <img style="height: 180px; width: auto;" src="/images/LowerArm-2.png" class="card-img-top pt-1"
+                      alt="neck-image">
+                    <div class="card-body">
+                      <form class="lowerarm-form" action="">
+                        <select name="score" id="lowerarmscore" required>
+                          <option value="1">Lower Arm Score: 1</option>
+                          <option value="2">Lower Arm Score: 2</option>
+                        </select>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="card mb-1 p-0" style="width: 100%;">
+                    <h5 class="card-title p-1 ps-3">Step 7: Locate Wrist Position</h5>
+                    <hr>
+                    <img style="height: 120px;" src="/images/Wrist.png" class="card-img-top" alt="neck-image">
+                    <div class="card-body">
+                      <p class="card-text">Step 7a: Adjust... <br>
+                        -If wrist is bent from midline or twisted: Add +1
+                      </p>
+                      <form class="wrist-form text-center pt-2" action="">
+                        <select name="score" id="wristscore">
+                          <option value="1">Wrist Score: 1</option>
+                          <option value="2">Wrist Score: 2</option>
+                          <option value="3">Wrist Score: 3</option>
+                        </select>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="card mb-1 p-0" style="width: 100%;">
+                    <h5 class="card-title p-1 ps-3">Step 8(B): Add Coupling Score
+                    </h5>
+                    <hr>
+                    <div class="card-body">
+                      <div class="row">
+                        <p class="card-text">
+                          -Well fitting Hangle and mid rang power grip, good: +0 <br>
+                          -Acceptable but not ideal hand hold or coupling acceptable with another body part, fair: +1
+                          <br>
+                          -Hand hold not acceptable but possible, poor: +2 <br>
+                          -No handles, awkward, unsafe with any body part, unacceptable: +3
+                        </p>
+                        <form class="coupling-form text-center pt-2" action="">
+                          <select name="score" id="couplingscore">
+                            <option value="0">Coupling Score: 0</option>
+                            <option value="1">Coupling Score: 1</option>
+                            <option value="2">Coupling Score: 2</option>
+                            <option value="3">Coupling Score: 3</option>
+                          </select>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Right Col END-->
+            </div>
+            <!-- First Row END -->
+
+            <!-- Second Row -->
+            <div class="row m-0 p-1" id="activity-row">
+              <div class="col p-1">
+                <div class="card mb-1" style="width: 100%;">
+                  <h5 class="card-title p-1 ps-3">Step 9: Activity Score
+                  </h5>
+                  <hr>
+                  <div class="card-body">
+                    <div class="row">
+                      <p class="card-text">-If the posture is static ( > 1min): Add +1 <br>
+                        -If the posture is repeated
+                        more than 4 times per minute: Add +1 <br>
+                        -If there is a quick and wide change of posture
+                        or unstable base : Add +1
+                      </p>
+                      <form class="activity-form text-center pt-2" action="">
+                        <select name="score" id="couplingscore">
+                          <option value="0">Activity Score: 0</option>
+                          <option value="1">Activity Score: 1</option>
+                          <option value="2">Activity Score: 2</option>
+                          <option value="3">Activity Score: 3</option>
+                        </select>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Second Row END-->
+          </div>
+          <!-- Reba Col END -->
+
+          <!-- Score Col  -->
+          <div class="col-xl-6 order-xl-last" id="score-col">
+            <div class="row reba-score-row align-self-center">
+              <div class="row" id="final-reba">
+                <h2>Find Your Final REBA Score</h2>
+              </div>
+              <div class="row">
+                <div class="row submit-row">
+                  <span class="submit-text">Calculate your REBA score, please click submit button.
+                  </span>
+                  <div class="input-group mb-3" id="submit-input-group">
+                    <button class="btn " type="button" id="button-addon1">Submit</button>
+                    <span type="text" class="form-control" placeholder="" aria-label="Example text with button addon"
+                      aria-describedby="button-addon1" id="score-output"></span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Score Table -->
+
+              <div class="row table-row">
+                <table class="table table-tertiary table-bordered border-dark border-thin">
+                  <thead>
+                    <tr>
+                      <th scope="col">Score</th>
+                      <th scope="col">Risk Level</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row" style="background-color: green;">1</th>
+                      <td>
+                        <h5 style="display: inline;">Negligible Risk:</h5> No action required.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" style="background-color: yellow;">2 - 3</th>
+                      <td>
+                        <h5 style="display: inline;">Low Risk:</h5> Change may be needed.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" style="background-color: orange;">4 - 7</th>
+                      <td colspan="2">
+                        <h5 style="display: inline;">Medium Risk:</h5> Further investigation,
+                        change
+                        soon.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" style="background-color: orangered;">8 - 10</th>
+                      <td colspan="2">
+                        <h5 style="display: inline;">High Risk: </h5>Investigate and implement
+                        change.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" style="background-color: red;">+11</th>
+                      <td colspan="2">
+                        <h5 style="display: inline;">Very High Risk:</h5> Implement change
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- Save Row -->
+
+              <div class="row">
+                <div class="col save-col">
+                  <div class="row">
+                    <span class="submit-text">Click the save button to save the completed
+                      assessment.
+                    </span>
+                  </div>
+                  <div class="row save-row">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop" id="primary-save-btn">Save Assessment
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                      tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Assessment
+                              Information</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="input-group">
+                              <span class="input-group-text">Observer</span>
+                              <input type="text" aria-label="First name" class="form-control" placeholder="Name">
+                              <input type="text" aria-label="Last name" class="form-control" placeholder="Surname">
+                            </div>
+                            <div class="input-group">
+                              <span class="input-group-text">Patient <span id="dummy">as</span> </span>
+                              <input type="text" aria-label="First name" class="form-control" placeholder="Name">
+                              <input type="text" aria-label="Last name" class="form-control" placeholder="Surname">
+                            </div>
+                            <div class="input-group mb-3">
+                              <span class="input-group-text" id="inputGroup-sizing-default">Task Name</span>
+                              <input type="text" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default"
+                                placeholder="example: JamesDaveToyotaLeftBody">
+                            </div>
+                            <div class="input-group mb-3">
+                              <span class="input-group-text" id="inputGroup-sizing-default">Date</span>
+                              <input type="text" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default" placeholder="example: 28/08/2020">
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-success">Save</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Score Col END-->
+
+        </div>
+      </div>
+    </section>
+    <!-- Main Section END -->
+  </div>
+  <!-- Full Content END-->
+
+</body>
+
+</html>

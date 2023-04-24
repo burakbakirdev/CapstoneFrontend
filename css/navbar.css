@@ -69,7 +69,7 @@ nav.navbar {
   color: rgb(139, 139, 124);
 }
 
-hr {
+.dropdown-divider{
   margin: 0;
   padding: 0;
   border: 1.5px solid rgb(247, 105, 255);

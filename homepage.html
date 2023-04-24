@@ -2,49 +2,68 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOMEPAGE</title>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
-        crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="css/homepage.css">
-    <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/homepage.css">
+  <link rel="stylesheet" href="css/global.css">
 
 </head>
 
 <body>
 
-    <header class="gh-dark-blue">
-        <div class="navbardiv">
-            <nav id="nav">
-                <h1 class="head-title"><a href="#home" class="montagu-font"><span class="logo">||</span>REBASE</a></h1>
-                <ul class="standartbtn">
-                    <div class="dropdown" id="divdpdw">
-                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false" id="usernamebtn">
-                            <i class="uil uil-user icon"></i><span class="text"
-                                onclick="window.location='profile.html'">username</span>
-                        </a>
-                        <ul class="dropdown-menu" id="dpdw">
-                            <li><a class="dropdown-item" href="#">Information</a></li>
-                            <li><a class="dropdown-item" href="#">Log out</a></li>
-                        </ul>
-                    </div>
-                    <li><a href="#reports"><i class="uil uil-file-graph"></i><span class="text"
-                                onclick="window.location='reports.html'">Reports</span></a></li>
-                    <li><a href="#createREBA" class="createREBA" onclick="window.location='createreba.html'"><span
-                                class="text">Create</span> REBA</a></li>
-                </ul>
-            </nav>
+  <!-- Full Content -->
+
+  <div class="all-content">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+      <div class="container">
+        <a class="navbar-brand montagu-font fs-2" href="homepage.html"><span class="logo">||</span>REBASE</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pb-lg-0 fs-4 fw-semibold">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false"><i class="uil uil-user icon fs-4 pe-2"></i>username
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="login-register.html">Log out</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="reports.html"><i
+                  class="uil uil-file-graph fs-4 pe-2"></i>Reports</a>
+            </li>
+            <li class="nav-item">
+              <a id="create-reba" class="nav-link active px-2" aria-current="page" href="createreba.html">Create
+                REBA</a>
+            </li>
+          </ul>
         </div>
-    </header>
+      </div>
+    </nav>
+    <!-- Navbar END-->
+
+  </div>
+
+  <!-- Full Content END-->
 
 </body>
 

@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(28, 8, 20);
+}
+
+/* Profile Section */
+
+.main-container{
+    background-color: white;
+    border-radius: 10px;
+}
+/* 
+.my-acc-col{
+    border: 2px solid black;
+    border-radius: 10px;
+} */
+
+a{
+    text-decoration: none;
+    color: rgb(13, 17, 23);
+}
+
+h1{
+    color: antiquewhite;
+    font-size: 4rem;
+}
+
+h3{
+    color: rgb(13, 17, 23);
+}
+
+
+.input-group{
+    width: 50% ;
+}
+
+.form-label{
+    color: rgb(13, 17, 23);
+}
+
+/* Profile Section END*/
